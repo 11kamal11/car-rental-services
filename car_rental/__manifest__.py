@@ -1,8 +1,9 @@
 {
     'name': 'Car Rental',
-    'version': '1.0.0',
+    'version': '18.0.1.0.0',
     'category': 'Services',
     'summary': 'Simple Car Rental Management',
+    'description': 'A simple module for managing car rentals',
     'depends': ['base'],
     'data': [
         'security/ir.model.access.csv',
@@ -11,4 +12,5 @@
     'installable': True,
     'application': True,
     'auto_install': False,
+    'license': 'LGPL-3',
 }

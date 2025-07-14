@@ -20,19 +20,19 @@
         </field>
     </record>
 
-    <!-- Car Tree View -->
-    <record id="view_car_tree" model="ir.ui.view">
-        <field name="name">car.rental.car.tree</field>
+    <!-- Car List View -->
+    <record id="view_car_list" model="ir.ui.view">
+        <field name="name">car.rental.car.list</field>
         <field name="model">car.rental.car</field>
         <field name="arch" type="xml">
-            <tree string="Cars">
+            <list string="Cars">
                 <field name="name"/>
                 <field name="brand"/>
                 <field name="model"/>
                 <field name="year"/>
                 <field name="price_per_day"/>
                 <field name="available"/>
-            </tree>
+            </list>
         </field>
     </record>
 
@@ -40,10 +40,10 @@
     <record id="action_car" model="ir.actions.act_window">
         <field name="name">Cars</field>
         <field name="res_model">car.rental.car</field>
-        <field name="view_mode">tree,form</field>
+        <field name="view_mode">list,form</field>
         <field name="help" type="html">
-            <p class="o_view_nocontent_smiling_face">
-                Create your first car!
+            <p>
+                Click the "New" button to create your first car.
             </p>
         </field>
     </record>

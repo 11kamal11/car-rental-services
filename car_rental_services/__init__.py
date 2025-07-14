@@ -1,2 +1,2 @@
-# from . import controllers  # Temporarily disabled for debugging
-from . import models
+# Empty module for testing
+# from . import models

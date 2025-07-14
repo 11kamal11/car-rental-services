@@ -12,13 +12,13 @@
         'views/customer_views.xml',
         'views/rental_views.xml',
         'views/menu.xml',
-        'views/website_templates.xml',
+        # 'views/website_templates.xml',  # Temporarily disabled for testing
     ],
-    'assets': {
-        'web.assets_frontend': [
-            'car_rental_services/static/src/css/website_car_rental.css',
-        ],
-    },
+    # 'assets': {
+    #     'web.assets_frontend': [
+    #         'car_rental_services/static/src/css/website_car_rental.css',
+    #     ],
+    # },
     'application': True,
     'installable': True,
     'auto_install': False,

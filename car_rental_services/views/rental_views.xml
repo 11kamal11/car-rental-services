@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_rental_form" model="ir.ui.view">
+        <field name="name">rental.form</field>
+        <field name="model">car.rental.booking</field>
+        <field name="arch" type="xml">
+            <form string="Booking">
+                <sheet>
+                    <group>
+                        <field name="car_id"/>
+                        <field name="name"/>
+                        <field name="rental_date"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_rental_list" model="ir.ui.view">
+        <field name="name">rental.list</field>
+        <field name="model">car.rental.booking</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="car_id"/>
+                <field name="name"/>
+                <field name="rental_date"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_rental" model="ir.actions.act_window">
+        <field name="name">Bookings</field>
+        <field name="res_model">car.rental.booking</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

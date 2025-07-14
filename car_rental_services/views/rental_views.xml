@@ -7,9 +7,13 @@
             <form string="Booking">
                 <sheet>
                     <group>
-                        <field name="car_id"/>
                         <field name="name"/>
+                        <field name="car_id"/>
+                        <field name="customer_id"/>
                         <field name="rental_date"/>
+                        <field name="return_date"/>
+                        <field name="total_amount"/>
+                        <field name="state"/>
                     </group>
                 </sheet>
             </form>
@@ -21,9 +25,12 @@
         <field name="model">car.rental.booking</field>
         <field name="arch" type="xml">
             <tree>
-                <field name="car_id"/>
                 <field name="name"/>
+                <field name="car_id"/>
+                <field name="customer_id"/>
                 <field name="rental_date"/>
+                <field name="return_date"/>
+                <field name="state"/>
             </tree>
         </field>
     </record>

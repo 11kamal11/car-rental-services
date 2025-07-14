@@ -8,24 +8,31 @@
                 <sheet>
                     <group>
                         <field name="name"/>
+                        <field name="license_plate"/>
+                        <field name="color"/>
+                        <field name="is_available"/>
                         <field name="model"/>
                         <field name="price_per_day"/>
-                        <field name="is_available"/>
+                        <field name="image_1920" widget="image"/>
+                        <field name="category_id"/>
+                        <field name="description"/>
                     </group>
                 </sheet>
             </form>
         </field>
     </record>
 
-    <record id="view_car_list" model="ir.ui.view">
-        <field name="name">car.list</field>
+    <record id="view_car_tree" model="ir.ui.view">
+        <field name="name">car.tree</field>
         <field name="model">car.rental.car</field>
         <field name="arch" type="xml">
             <tree>
                 <field name="name"/>
+                <field name="license_plate"/>
                 <field name="model"/>
                 <field name="price_per_day"/>
                 <field name="is_available"/>
+                <field name="category_id"/>
             </tree>
         </field>
     </record>

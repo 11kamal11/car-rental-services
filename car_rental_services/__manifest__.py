@@ -12,9 +12,6 @@
         'views/menu.xml',
         'views/website_templates.xml',
     ],
-    'controllers': [
-        'controllers/website.py',
-    ],
     'assets': {
         'web.assets_frontend': [
             'car_rental_services/static/src/css/website_car_rental.css',

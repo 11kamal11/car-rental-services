@@ -3,6 +3,8 @@
     'version': '1.0',
     'category': 'Services',
     'summary': 'Manage car rentals including customers and bookings',
+    'author': 'Your Name',
+    'website': 'https://github.com/11kamal11/car-rental-services',
     'depends': ['base', 'website'],
     'data': [
         'security/ir.model.access.csv',
@@ -19,5 +21,6 @@
     },
     'application': True,
     'installable': True,
+    'auto_install': False,
     'license': 'LGPL-3',
 }

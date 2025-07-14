@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<odoo>
-    <menuitem id="menu_root" name="Car Rental" sequence="10"/>
-    <menuitem id="menu_car" name="Cars" parent="menu_root" action="action_car"/>
-</odoo>
